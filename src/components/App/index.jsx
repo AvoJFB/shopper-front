@@ -1,10 +1,8 @@
 // @flow
 import React from 'react';
+import Root from '../Root';
+import './index.css';
 
-const App = () => {
-  const title: string = 'Shopper';
-
-  return <div className="container">{title}</div>;
-};
+const App = () => <Root />;
 
 export default App;

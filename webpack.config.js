@@ -17,8 +17,15 @@ module.exports = {
     loaders: [
       {
         test: /\.jsx?$/,
+        include: [path.resolve(__dirname, 'src')],
         exclude: /node_modules/,
         loader: 'babel-loader',
+      },
+      {
+        test: /\.css?$/,
+        include: [path.resolve(__dirname, 'src')],
+        exclude: /node_modules/,
+        loader: 'style-loader!css-loader',
       },
     ],
   },
