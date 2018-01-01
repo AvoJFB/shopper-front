@@ -1,12 +1,7 @@
 {
-  "extends": [
-    "plugin:flowtype/recommended",
-    "airbnb"
-  ],
+  "extends": ["plugin:flowtype/recommended", "prettier", "airbnb"],
   "parser": "babel-eslint",
-  "plugins": [
-    "flowtype"
-  ],
+  "plugins": ["flowtype"],
   "globals": {
     "document": true
   }
